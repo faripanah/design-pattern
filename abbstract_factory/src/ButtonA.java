@@ -1,5 +1,5 @@
-//concrete products
-public class ButtonA extends UIElement {
+//concrete products for style A
+public class ButtonA extends Button {
     public ButtonA(String text) {
         super(text);
     }

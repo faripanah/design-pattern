@@ -1,8 +1,8 @@
 //abstract factory
 public interface UIFactory {
-    UIElement  createButton(String text);
-    UIElement  createTextField(String text);
-    UIElement  createCheckbox(String text);
+    Button  createButton(String text);
+    TextField  createTextField(String text);
+    Checkbox  createCheckbox(String text);
 }
 
 

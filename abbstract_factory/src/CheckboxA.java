@@ -1,4 +1,5 @@
-public class CheckboxA extends UIElement {
+//concrete product style A
+public class CheckboxA extends Checkbox {
     public CheckboxA(String text) {
         super(text);
     }

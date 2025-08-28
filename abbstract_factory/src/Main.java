@@ -4,9 +4,9 @@ public class Main {
         //  Style A
         UIFactory factory = new AFactory();
 
-        UIElement btn = factory.createButton("Click Me!");
-        UIElement txt = factory.createTextField("Enter name");
-        UIElement chk = factory.createCheckbox("Accept terms");
+        Button btn = factory.createButton("Click Me!");
+        TextField txt = factory.createTextField("Enter name");
+        Checkbox chk = factory.createCheckbox("Accept terms");
 
         btn.display();
         txt.display();
@@ -14,9 +14,9 @@ public class Main {
 
         //  style B
         factory = new BFactory();
-        UIElement btn2 = factory.createButton("Press");
-        UIElement txt2 = factory.createTextField("Type here");
-        UIElement chk2 = factory.createCheckbox("Subscribe");
+        Button btn2 = factory.createButton("Press");
+        TextField txt2 = factory.createTextField("Type here");
+        Checkbox chk2 = factory.createCheckbox("Subscribe");
 
         btn2.display();
         txt2.display();

@@ -38,9 +38,12 @@ public class Gui extends Application  {
         new Thread(() -> {
             try {
                 Thread.sleep(15000);
-            } catch (InterruptedException e) {}
-            station.removeObserver(obs1);
-            System.out.println("Observer 1 removed");
+                station.removeObserver(obs1);
+                System.out.println("Observer 1 removed");
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+
         }).start();
     }
 

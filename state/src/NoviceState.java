@@ -3,7 +3,7 @@ public class NoviceState extends State {
     public NoviceState(Character character) {
         super(character);
 
-
+    }
         public void action(){
             String[] options = {"Train"};
             int choice = character.readChoice(options);
@@ -18,4 +18,4 @@ public class NoviceState extends State {
         }
     }
 
-}
+

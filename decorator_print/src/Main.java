@@ -9,7 +9,7 @@ public class Main {
         System.out.println("----");
 
         // Decorated printer: XML + Encryption
-        Printer printer2 = new EncryptedPrinter(new XMLPrinter(new BasicPrinter()));
+        Printer printer2 = new EncryptedPrinter(new XMLPrinter(new BasicPrinter())); // viikaatan
         printer2.print("Hello World!");
 
     }

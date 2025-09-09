@@ -7,6 +7,7 @@ public abstract  class Game {
             playSingleTurn(playerInTurn);
             playerInTurn = ++playerInTurn % numberOfPlayers;
         }
+
         displayWinner();
     }
 

@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class DiceGame extends Game{
+public class  DiceGame  extends Game{
     private int[] playerScores;     // keeps track of scores
     private int winningScore = 20;  // target score
     private int winner = -1;        // store winner index

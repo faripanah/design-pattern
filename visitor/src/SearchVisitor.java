@@ -18,9 +18,11 @@ public class SearchVisitor implements FileSystemVisitor {
 
     @Override
     public void visit(Directory directory) {
-        // کاری لازم نیست، چون Directory فقط شامل عناصره
+
     }
 
     public List<File> getFoundFiles() {
         return foundFiles;
+
     }
+}

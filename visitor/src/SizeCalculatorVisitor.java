@@ -4,6 +4,7 @@ public class SizeCalculatorVisitor implements FileSystemVisitor{
 
     @Override
     public void visit(File file) {
+
         totalSize += file.getSize();
     }
     public int getTotalSize() {

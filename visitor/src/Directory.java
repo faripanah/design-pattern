@@ -10,6 +10,7 @@ public class Directory implements FileSystemElement {
         this.name = name;
     }
     public String getName() {
+
         return name;
     }
     public void addElement(FileSystemElement element) {
@@ -21,6 +22,7 @@ public class Directory implements FileSystemElement {
     @Override
     public void accept(FileSystemVisitor visitor) {
         visitor.visit(this);
+
 
     }
 }

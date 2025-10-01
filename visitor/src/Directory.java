@@ -7,6 +7,7 @@ public class Directory implements FileSystemElement {
     private List<FileSystemElement> elements = new ArrayList<>();
 
     public Directory(String name) {
+
         this.name = name;
     }
     public String getName() {

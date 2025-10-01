@@ -9,11 +9,13 @@ public class DocumentProxy implements Document {
     private RealDocument realDocument;
     private Set<String> allowedUsers = new HashSet<>();
 
-    public DocumentProxy(int id, Date creationDate) {
+    public DocumentProxy(int id, Date creationDate, String[] allowedUsers ) {
         this.id = id;
         this.creationDate = creationDate;
 
     }
+
+
     @Override
     public int getId() {
         return id;

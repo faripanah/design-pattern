@@ -1,23 +1,23 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.nio.file.AccessDeniedException;
+import java.util.Date;
 
 public class Library {
     private Map<Integer, Document> documents = new HashMap<>();
 
-    public void addUnprotectedDocument(int id, String content){
-        documents.put(id, new Document(id, new Date(), content));
-
+    // add unprotected document
+    public void addUnprotectedDocument(String id, String content) {
+        documents.put(id, new Date());
     }
-    public void addProtectedDocument(String id, String content, String... allowedUsers) {
-        DocumentProxy proxy = new DocumentProxy(id, new Date(), content);
+
+    // add protected document (allowedUsers stored inside Proxy)
+    public void addProtectedDocument(int id, String... allowedUsers) {
+        DocumentProxy proxy = new DocumentProxy(id, new Date(), allowedUsers);
         documents.put(id, proxy);
-
-        AccessControlService acs = AccessControlService.getInstance();
-        for (String user : allowedUsers) {
-            acs.allowAccess(user, id);
-        }
     }
 
+    // retrieve a document (proxy or real)
     public Document getDocument(String id) {
         return documents.get(id);
     }

@@ -17,7 +17,7 @@ public class Recommendation implements Cloneable {
             Recommendation copy = (Recommendation) super.clone();
             copy.books = new ArrayList<>();
             for (Book b : this.books) {
-                copy.books.add(b.clone());
+                copy.books.add(b);//b.clone()
             }
             return copy;
         } catch (CloneNotSupportedException e) {

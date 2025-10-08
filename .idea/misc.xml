@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/memento/pom.xml" />
         <option value="$PROJECT_DIR$/flyweight/pom.xml" />
         <option value="$PROJECT_DIR$/mediator/pom.xml" />
+        <option value="$PROJECT_DIR$/command/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

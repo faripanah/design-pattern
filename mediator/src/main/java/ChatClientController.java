@@ -20,6 +20,7 @@ public class ChatClientController implements ChatClient {
         this.username = username;
         this.mediator = mediator;
         //mediator.registerClient(ChatClient client);
+        //mediator.addController
         initUI();
 
     }
